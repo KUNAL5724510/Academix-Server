@@ -4,12 +4,12 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
 import java.util.Optional;
-import academix.com.academix.Entity.Principal;
+import academix.com.academix.Entity.Users;
 
 @Repository
-public interface UserRepository extends JpaRepository<Principal, Integer> {
+public interface UserRepository extends JpaRepository<Users, Integer> {
 
-    Optional<Principal> findByEmail(String email);
+    Optional<Users> findByEmail(String email);
   
 
 }
