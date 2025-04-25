@@ -75,5 +75,17 @@ public class CUsers {
         
         
     }
-     
+
+    @GetMapping("/get-teacher")
+    public Users getTeacher() {
+        // Retrieve the teacher from the database
+        Optional<Users> teacher = cuser.findByRole("Teacher");
+        if (teacher.isPresent()) {
+            return(teacher.get());
+            // Do something with the teacher details
+            
+        } else {
+            return null;
+        }
+    }
 }
