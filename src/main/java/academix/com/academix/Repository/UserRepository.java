@@ -10,6 +10,8 @@ import academix.com.academix.Entity.Users;
 public interface UserRepository extends JpaRepository<Users, Integer> {
 
     Optional<Users> findByEmail(String email);
+
+    Optional<Users> findByRole(String string);
   
 
 }
