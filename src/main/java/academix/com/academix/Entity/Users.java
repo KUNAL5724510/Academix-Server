@@ -9,7 +9,7 @@ import jakarta.persistence.Table;
 
 @Entity
 @Table(name = "users")
-public class Principal {
+public class Users {
     
     @GeneratedValue
     @Id
@@ -27,7 +27,7 @@ public class Principal {
     @Column(name = "role")
     private String role;
 
-    public Principal() {
+    public Users() {
     }
 
     public String getname() {
